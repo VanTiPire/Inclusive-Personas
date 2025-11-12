@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persona: Blind, a bit of a geek</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="persona.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html#homepage" class="logo">
+      <img src="images/logo.svg" alt="My Logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html#persona-cards">Persona Cards</a></li>
+        <li><a href="index.html#options">Accessibility Features</a></li>
+        <li><a>About</a></li>
+        <li class="nav-last">
+          <a href="#accessibility-settings">
+            <img src="images/accessibility.svg" alt="" aria-hidden="true" />
+            Accessibility Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="accessibility-popup" class="accessibility-dropdown">
+    <div class="dropdown-content">
+
+      <div class="setting-group">
+        <label for="text-size-control"><strong>Text Size</strong></label>
+        <div class="text-size-controls">
+          <button id="decrease-text" aria-label="Decrease text size">-</button>
+          <span id="current-size">100%</span>
+          <button id="increase-text" aria-label="Increase text size">+</button>
+        </div>
+        <div class="setting-group">
+          <label><strong>High Contrast Mode</strong></label>
+          <button id="toggle-contrast" aria-pressed="false">Enable</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="options-section">
+      <div class="options-header">
+        <h1>Blind, a bit of a geek</h1>
+        <div class="options-container">
+          <div class="option active" data-target="option1" tabindex="0">
+            <h3>Characteristics and Abilities</h3>
+          </div>
+          <div class="option" data-target="option2" tabindex="0">
+            <h3>Challenges with Technologies</h3>
+          </div>
+          <div class="option" data-target="option3"tabindex="0">
+            <h3>Technology Adaptations</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="option1" class="image-text-container" style="display:flex;">
+        <img src="images/geek.svg" alt="Boy that is blind, he is wearing headphones, using his computer and thinking about his future achievements">
+        <div class="text-content">
+          <p>Jacob is a paralegal in a law firm. He reviews cases and writes summaries, cross-referencing them to the
+            clients. He's building expertise in law and is hoping to go to law school in a year.
+            He's a bit of a gadget geek, always trying out new tools. He likes the challenge of learning new tools. His
+            other challenge is running. He's training for a 10K run, running with a club in his neighborhood and using
+            an
+            app to plan his routes and track his distance.
+          </p>
+          <div class="tags">
+            <p>Technology entusiast</p>
+            <p>Gadgets</p>
+            <p>Paralegal</p>
+            <p>Running</p>
+            <p>Personal Goals</p>
+          </div>
+        </div>
+      </div>
+      <div id="option2" class="image-text-container">
+        <img src="images/geek2.svg" alt="Computer and mobile phone, exemples of technologies presenting errors">
+        <div class="text-content">
+          <p>
+            As far as Jacob is concerned, it's the technology that's handicapped, not him. When everything is in place,
+            he
+            can work just as fast and just as effectively as anyone in his office.
+          </p>
+          <div class="tags">
+            <p>Technology</p>
+            <p>Productivity</p>
+            <p>Efficiency tools</p>
+          </div>
+        </div>
+      </div>
+      <div id="option3" class="image-text-container">
+        <img src="images/geek3.svg" alt="Two boys and a girl, including the blind boy from the persona card, buying a train ticket in a mobile app">
+        <div class="text-content">
+          <p>
+            The last few years have been a lot of fun with all the new apps, and VoiceOver on his Mac and phone lets him
+            use most of them pretty well.
+            He's just started to use the iPhone app, Passbook, and uses it to get train tickets and other travel. The
+            regional rail system has an app, so he can just pull up the barcode and scan it at the ticket office. No
+            fumbling for the right printed card - total independence. Same phone as everyone. Same app as everyone, and
+            it
+            all just works.
+          </p>
+          <div class="tags">
+            <p>Accessibility</p>
+            <p>Assistive technology</p>
+            <p>Overcoming barriers</p>
+            <p>Idependence</p>
+            <p>VoiceOver</p>
+            <p>Passbook</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

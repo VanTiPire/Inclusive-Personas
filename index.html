@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Organized Homepage</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html#homepage" class="logo">
+      <img src="images/logo.svg" alt="My Website Logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#persona-cards">Persona Cards</a></li>
+        <li><a href="#options">Accessibility Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="nav-last">
+          <a href="#accessibility-settings">
+            <img src="images/accessibility.svg" alt="" aria-hidden="true" />
+            Accessibility Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="accessibility-popup" class="accessibility-dropdown">
+    <div class="dropdown-content">
+
+      <div class="setting-group">
+        <label for="text-size-control"><strong>Text Size</strong></label>
+        <div class="text-size-controls">
+          <button id="decrease-text" aria-label="Decrease text size">-</button>
+          <span id="current-size">100%</span>
+          <button id="increase-text" aria-label="Increase text size">+</button>
+        </div>
+        <div class="setting-group">
+          <label><strong>High Contrast Mode</strong></label>
+          <button id="toggle-contrast" aria-pressed="false">Enable</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="area area1" id="homepage">
+      <div class="image-container">
+        <img src="images/ip.svg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="text-container">
+        <div class="text-block">
+          <h1>Designing for everyone, not just the average</h1>
+          <p class="subTitle">Seeking connection, understanding, and stories like yours.</p>
+        </div>
+
+        <div class="info-wrapper">
+          <div class="info-block">
+            <h3>Meet the Personas</h3>
+            <img src="images/personas.svg" alt="Illustration of multiple user personas" />
+            <a href="#persona-cards"><span class="buttonAbout">Explore Now</span></a>
+          </div>
+
+          <div class="info-block">
+            <h3>Adapt your Experience</h3>
+            <img src="images/abilities.svg" alt="Illustration of possible selected abilities" />
+            <a href="#options"><span class="buttonAbout">Select Now</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="area area3" id="options">
+      <div class="content-wrapper">
+        <div class="text-block2">
+          <h2>List of Disabilities</h2>
+          <p>Choose as many options as you like to personalize your experience.</p>
+        </div>
+
+        <div class="grid-container area3-grid">
+          <div class="grid-item" tabindex="0">
+            <img src="images/blindness.svg" alt="" aria-hidden="true" />Blindness
+          </div>
+          <div class="grid-item"tabindex="0">
+            <img src="images/vision.svg" alt="" aria-hidden="true" />Low Vision
+          </div>
+          <div class="grid-item"tabindex="0">
+            <img src="images/color.svg" alt="" aria-hidden="true" />Color Blindness
+          </div>
+          <div class="grid-item"tabindex="0">
+            <img src="images/deafness.svg" alt="" aria-hidden="true" />Deafness or Hard of Hearing
+          </div>
+          <div class="grid-item"tabindex="0">
+            <img src="images/speech.svg" alt="" aria-hidden="true" />Speech Impairment
+          </div>
+          <div class="grid-item"tabindex="0">
+            <img src="images/dyslexia.svg" alt="" aria-hidden="true" />Dyslexia
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/adhd.svg" alt="" aria-hidden="true" />ADHD
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/autism.svg" alt="" aria-hidden="true" />Autism Spectrum Disorder
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/memory.svg" alt="" aria-hidden="true" />Intellectual or Memory Impairment
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/epilepsy.svg" alt="" aria-hidden="true" />Epilepsy
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/cerebral.svg" alt="" aria-hidden="true" />Cerebral Palsy
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/paralysis.svg" alt="" aria-hidden="true" />Paralysis
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/arthritis.svg" alt="" aria-hidden="true" />Arthritis
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/hand.svg" alt="" aria-hidden="true" />Hand Tremors
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="area area2" id="persona-cards">
+      <div class="content-wrapper">
+        <div class="text-block2">
+          <h2>Our Persona Collection</h2>
+          <p>Explore our curated set of inclusive persona cards designed to represent diverse user experiences.</p>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item" tabindex="0">
+            <img src="images/persona1.svg" alt="Illustration of a boy, holding a bag and he is a supermarket assistant with Down syndrome" />
+            <h4>Supermarket assistant with Down syndrome</h4>
+          </div>
+          <a href="persona.html" class="grid-item" tabindex="0">
+            <img src="images/persona2.svg" alt="Illustration of a blind person usinga computer " />
+            <h4>Blind, a bit of a geek</h4>
+          </a>
+          <div class="grid-item" tabindex="0">
+            <img src="images/persona3.svg" alt="Illustration of a grandmother holding a book and with macular degeneration" />
+            <h4>Grandmother with macular degeneration</h4>
+          </div>
+          <div class="grid-item" tabindex="0">
+            <img src="images/persona4.svg" alt="Illustration of a bilingual woman using her mobile phone" />
+            <h4>Bilingual mobile phone user</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
